@@ -14,13 +14,13 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file)
 
     # Display the original image
-    st.image(image, caption="Original Image", use_column_width=True)
+    st.image(image, caption="Original Image", use_container_width=True)
 
     # Remove the background
     processed_image = remove(image)
 
     # Display the processed image
-    st.image(processed_image, caption="Processed Image", use_column_width=True)
+    st.image(processed_image, caption="Processed Image", use_container_width=True)
 
     # Prepare to download processed image
     buf = io.BytesIO()
