@@ -4,7 +4,7 @@ from PIL import Image
 import io
 
 # Set up the Streamlit app
-st.title("Background Remover")
+st.title("Background Remover by GeekendZone!")
 
 # File uploader to allow image upload
 uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
